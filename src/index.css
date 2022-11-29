@@ -1,13 +1,111 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+.carousel-inner-img {
+  min-width: 50%;
+  height: 100vh;
+  object-fit: cover;
+  -webkit-animation: thing 12s;
+  -o-animation: thing 12s;
+  animation: thing 12s;
+  /*  filter: grayscale(30%); */
+  margin-left: 46%;
+}
+.carousel-inner-main-img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  -webkit-animation: thing 12s;
+  -o-animation: thing 12s;
+  animation: thing 12s;
+  margin-top: -75px;
+}
+.navbar-brand {
+  width: 50px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.background {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fe4236;
+  object-fit: fill;
+  position: relative;
+}
+.background .overlay .ingresar {
+  max-width: 300px;
+  margin: 0;
+  position: absolute;
+  z-index: 999;
+}
+.form-login {
+  max-width: 500px;
+  background: #f7f3ee;
+  padding: 30px;
+  margin: auto;
+  margin-top: 0px;
+  border-radius: 8px;
+  color: black;
+}
+.banner {
+  width: 100%;
+  max-height: 400px;
+  margin-bottom: 50px;
+}
+.nosotros {
+  width: 100%;
+  max-height: 600px;
+  margin-bottom: 50px;
+}
+.calendario {
+  width: 40%;
+  margin-top: 50px;
+}
+background-login {
+  width: 100%;
+  height: 100%;
+  background-color: #123ac8;
+  object-fit: fill;
+  position: relative;
+}
+/* Botones*/
+
+.form-login {
+  max-width: 500px;
+  background: #f7f3ee;
+  padding: 30px;
+  margin: auto;
+  margin-top: 0px;
+  border-radius: 8px;
+  color: black;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.form-group {
+  margin-top: 8px;
+  justify-content: center;
+}
+
+/* Botones*/
+.btn.bg-rojo.centerButton {
+  align-content: right;
+  margin-top: 20px;
+  background-color: #fe4236 !important;
+  color: #f7f3ee !important;
+}
+/* .bg-rojo {
+
+} */
+
+@keyframes inputHighlighter {
+  from {
+    background: #5264ae;
+  }
+
+  to {
+    width: 0;
+    background: transparent;
+  }
 }
