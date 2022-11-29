@@ -67,6 +67,9 @@ const Login = ({ setUser }) => {
         { withCredentials: true }
       )
       .then((res) => setUser(res.data))
+      .then(() => {
+        navigate("/main");
+      })
 
       .catch((error) => console.log(error.response.data));
   };

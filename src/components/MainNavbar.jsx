@@ -55,6 +55,11 @@ const MainNavbar = ({ user }) => {
               <li>
                 <h2>{user?.name ? "Hola " + user?.name : null}</h2>
               </li>
+              <li className="nav-item ">
+                <a className="nav-link " href="/logout">
+                  Logout
+                </a>
+              </li>
             </ul>
 
             {/* {!user ? (

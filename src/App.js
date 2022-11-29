@@ -11,6 +11,8 @@ import Nosotros from "./components/Nosotros";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import MainNavbar from "./components/MainNavbar";
+import Logout from "./components/Logout";
+import Favorites from "./components/Favorites";
 
 function App() {
   const [user, setUser] = useState({});
@@ -48,6 +50,14 @@ function App() {
         <Route
           path="/nosotros"
           element={<Nosotros data-target="#nosotros" />}
+        />
+        <Route
+          path="/logout"
+          element={<Logout data-target="#logout" setUser={setUser} />}
+        />
+        <Route
+          path="/favorites"
+          element={<Favorites data-target="#nosotros" user={user} />}
         />
       </Routes>
     </>
