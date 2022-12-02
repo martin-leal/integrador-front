@@ -13,6 +13,7 @@ import axios from "axios";
 import MainNavbar from "./components/MainNavbar";
 import Logout from "./components/Logout";
 import Favorites from "./components/Favorites";
+import Search from "./components/Search";
 
 function App() {
   const [user, setUser] = useState({});
@@ -59,6 +60,7 @@ function App() {
           path="/favorites"
           element={<Favorites data-target="#nosotros" user={user} />}
         />
+        <Route path="/search" element={<Search data-target="#search" />} />
       </Routes>
     </>
   );

@@ -60,6 +60,11 @@ const MainNavbar = ({ user }) => {
                   Logout
                 </a>
               </li>
+              <li className="nav-item ">
+                <a className="nav-link " href="/search">
+                  Buscador
+                </a>
+              </li>
             </ul>
 
             {/* {!user ? (
