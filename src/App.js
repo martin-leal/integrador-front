@@ -15,7 +15,7 @@ import Logout from "./components/Logout";
 import Favorites from "./components/Favorites";
 import Search from "./components/Search";
 import Admin from "./components/Admin";
-import Detail from "./components/Detail";
+/* import Detail from "./components/Detail"; */
 
 
 function App() {
@@ -52,7 +52,7 @@ function App() {
         />
         <Route path="/visita" element={<Visita data-target="#visita" />} />
         <Route path="/admin" element={<Admin data-target="#admin" />} />
-        <Route path="/detail" element={<Detail data-target="#detail" />} />
+        {/* <Route path="/detail" element={<Detail data-target="#detail" />} /> */}
         <Route
           path="/nosotros"
           element={<Nosotros data-target="#nosotros" />}
