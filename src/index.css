@@ -8,9 +8,9 @@ body {
   min-width: 50%;
   height: 100vh;
   object-fit: cover;
-  -webkit-animation: thing 12s;
-  -o-animation: thing 12s;
-  animation: thing 12s;
+  -webkit-animation: thing 8s;
+  -o-animation: thing 8s;
+  animation: thing 8s;
   /*  filter: grayscale(30%); */
   margin-left: 46%;
 }
@@ -18,9 +18,9 @@ body {
   width: 100%;
   height: 100vh;
   object-fit: cover;
-  -webkit-animation: thing 12s;
-  -o-animation: thing 12s;
-  animation: thing 12s;
+  -webkit-animation: thing 8s;
+  -o-animation: thing 8s;
+  animation: thing 8s;
   margin-top: -75px;
 }
 .navbar-brand {
@@ -99,8 +99,6 @@ background-login {
 
 } */
 
-<<<<<<< Updated upstream
-=======
 /*Buscador*/
 .background-marca-agua {
   width: 100%;
@@ -182,7 +180,6 @@ background-login {
   font-size: 18px;
 }
 
->>>>>>> Stashed changes
 @keyframes inputHighlighter {
   from {
     background: #5264ae;
