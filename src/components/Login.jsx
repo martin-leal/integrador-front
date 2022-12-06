@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import MainNavbar from "./MainNavbar";
 
+
 // HANDLER DEL SUBMIT DE FORMULARIOS
 
 const Login = ({ setUser }) => {
@@ -84,8 +85,9 @@ const Login = ({ setUser }) => {
         email,
         password,
       })
-      .then((res) => console.log("usuario creado correctamente"));
+      .then(() => setName(""), setLastname(""), setPhone(""), setEmail(""), setPassword(""));
   };
+
 
   return (
     <>
