@@ -15,6 +15,7 @@ import Logout from "./components/Logout";
 import Favorites from "./components/Favorites";
 import Search from "./components/Search";
 
+
 function App() {
   const [user, setUser] = useState({});
 
