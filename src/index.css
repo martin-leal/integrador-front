@@ -8,9 +8,9 @@ body {
   min-width: 50%;
   height: 100vh;
   object-fit: cover;
-  -webkit-animation: thing 12s;
-  -o-animation: thing 12s;
-  animation: thing 12s;
+  -webkit-animation: thing 8s;
+  -o-animation: thing 8s;
+  animation: thing 8s;
   /*  filter: grayscale(30%); */
   margin-left: 46%;
 }
@@ -18,9 +18,9 @@ body {
   width: 100%;
   height: 100vh;
   object-fit: cover;
-  -webkit-animation: thing 12s;
-  -o-animation: thing 12s;
-  animation: thing 12s;
+  -webkit-animation: thing 8s;
+  -o-animation: thing 8s;
+  animation: thing 8s;
   margin-top: -75px;
 }
 .navbar-brand {
@@ -98,6 +98,86 @@ background-login {
 /* .bg-rojo {
 
 } */
+
+/*Buscador*/
+.background-marca-agua {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("https://static.tokkobroker.com/pictures/70515481465414329222348399778114687391599399167965672903064517771696124959743.jpg");
+  opacity: 70%;
+  padding: 2rem 0 0 0;
+  object-fit: fill;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.formulario-search{
+  background-color: rgba(255, 255, 255, 0.832);
+  max-width: 400px;
+  padding: 30px;
+  margin: auto;
+  margin-top: 0px;
+  border-radius: 8px;
+  margin-bottom: 100px;
+}
+.formulario-titulo{
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 24px;
+}
+.seleccion{
+  height: 100%;
+  text-decoration: none;
+  display: inline;
+  margin-right: 20px;  
+}
+.input{
+  margin-top: 30px;
+}
+.form-appraisals {
+  max-width: 500px;
+  background: #24303c;
+  opacity: 80%;
+  padding: 30px;
+  margin: auto;
+  margin-top: 0px;
+  border-radius: 8px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white
+}
+
+.form-appraisals h4{
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 24px;
+}
+.form-appraisals h6{
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+.form-appraisals p{
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+}
+.form-appraisals a{
+  color:white;
+  text-align: center;
+  font-size: 18px;
+}
+.controls{
+  width: 100%;
+  background: #24303c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  border: 1px solid #1f53c5;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 18px;
+}
 
 @keyframes inputHighlighter {
   from {

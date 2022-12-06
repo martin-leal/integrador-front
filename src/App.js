@@ -14,6 +14,8 @@ import MainNavbar from "./components/MainNavbar";
 import Logout from "./components/Logout";
 import Favorites from "./components/Favorites";
 import Search from "./components/Search";
+import Admin from "./components/Admin";
+import Detail from "./components/Detail";
 
 function App() {
   const [user, setUser] = useState({});
@@ -48,6 +50,8 @@ function App() {
           element={<Alquiler data-target="#alquiler" />}
         />
         <Route path="/visita" element={<Visita data-target="#visita" />} />
+        <Route path="/admin" element={<Admin data-target="#admin" />} />
+        <Route path="/detail" element={<Detail data-target="#detail" />} />
         <Route
           path="/nosotros"
           element={<Nosotros data-target="#nosotros" />}
