@@ -5,11 +5,11 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 import MainNavbar from "./MainNavbar";
 import useInput from "../hooks/useInput";
 import axios from "axios";
-import {Link} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 
 const Visita = () => {
-
+  const navigate = useNavigate();
   const image = useInput();
   const address = useInput();
   const price = useInput();
@@ -25,17 +25,18 @@ const Visita = () => {
     var data = { 
       image: image.value,
       address: address.value,
-      price: price.value,
+      price: Number(price.value),
       city:city.value, 
       neigh:neigh.value,
       type:type.value,
       description:description.value,
-      bedrooms:bedrooms.value,
-      code: code.value
+      bedrooms:Number(bedrooms.value),
+      code: Number(code.value)
     };
 
     axios.post("http://localhost:8000/api/property/add", data).then((res) => {
       console.warn(res.data);
+      navigate("/enventa")
       return res.data;
     });
   };
@@ -99,9 +100,9 @@ const Visita = () => {
                             </div> */}
 
                             <div className="pt-3">
-                                <Link to="/enventa">
+                                
                                   <button type="submit" className="btn centerButton">Agregar Propiedad</button>
-                                </Link>
+                                
                                   
                             </div>
 

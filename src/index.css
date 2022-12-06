@@ -179,6 +179,20 @@ background-login {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 18px;
 }
+.card-detail {
+  font-size: 16px;
+  text-align: center;
+  padding-bottom: 4px;
+}
+.card-detail-subtitle {
+  font-size: 14px;
+  text-align: center;
+}
+.card-detail-descrip {
+  font-size: 18px;
+  text-align: center;
+}
+
 
 @keyframes inputHighlighter {
   from {

@@ -5,7 +5,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 import MainNavbar from "./MainNavbar";
 import { useState, useEffect } from "react";
 import axios from "axios";
-import {Link} from "react-router-dom";
+
 
 const Search = () => {
   const [inmuebles, setInmuebles] = useState([]);
@@ -144,9 +144,7 @@ const Search = () => {
                   <div className="card-text  mb-4 border border-primary">
                     <h5>{property.price}</h5>
                   </div>
-                  <Link to="/detail">
-                      <button className="btn btn-primary">VER MÁS</button>  
-                  </Link>
+                 
                 </div>
               </div>
                
