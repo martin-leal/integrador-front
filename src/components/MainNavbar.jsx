@@ -37,70 +37,95 @@ const MainNavbar = ({ user }) => {
                   Alquiler
                 </a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/visita">
-                  Agendá tu visita
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/nosotros">
-                  Nosotros
-                </a>
-              </li>
-              <li className="nav-item ">
-                <a className="nav-link " href="/login">
-                  Ingresar / Registrarse
-                </a>
-              </li>
-              <li>
-                <h2>{user?.name ? "Hola " + user?.name : null}</h2>
-              </li>
-              <li className="nav-item ">
-                <a className="nav-link " href="/logout">
-                  Logout
-                </a>
-              </li>
-              <li className="nav-item ">
-                <a className="nav-link " href="/search">
-                  Buscador
-                </a>
-              </li>
-            </ul>
+              
+              {!user.name ? 
+                <ul className="navbar-nav mr-auto">
+                  <li className="nav-item">
+                    <a className="nav-link" href="/visita">
+                      Agendá tu visita
+                    </a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="/nosotros">
+                      Nosotros
+                    </a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="/search">
+                      Buscá tu proxima propiedad
+                    </a>
+                  </li>
+                  <li className="nav-item ">
+                    <a className="nav-link " href="/login">
+                      Ingresar / Registrarse
+                    </a>
+                  </li>
+                </ul>  
+                : 
 
-            {/* {!user ? (
-            <>
-               */}
-            {/* <li className="nav-item ">
-              <a className="nav-link " href="/login">
-                Ingresar/Registrarse
-              </a>
-            </li>*/}
-            {/*  </>
-      ) : user.role === "admin"? (
-              <>
-              <li className="form-inline my-2 my-lg-0">
-            <a className="nav-link" href="admin" >Administrar página</a>
-            </li>
-            <li className="form-inline my-2 my-lg-0">
-            <a className="nav-link"  >Hola {user.name.toUpperCase()}</a>
-            </li>
-            <li className="form-inline my-2 my-lg-0">
-            <a className="nav-link" href="logout" onClick={logoutHandler}>Salir</a>
-            </li>
-            </>
-      ) : (
-              <>
-            <li className="form-inline my-2 my-lg-0">
-            <a className="nav-link " href={"profile"} >Hola {user.name.toUpperCase()}</a>
-            </li>
-            <li className="form-inline my-2 my-lg-0">
-            <a className="nav-link " href={"profile"} >Mi perfil</a>
-            </li>
-            <li className="form-inline my-2 my-lg-0">
-            <a className="nav-link" href="logout" onClick={logoutHandler}>Salir</a>
-            </li>
-            </>
-          )} */}
+                ""
+             
+            }
+
+            { user.role === "customer"?
+                <ul className="navbar-nav mr-auto">                              
+                <li className="nav-item">
+                    <a className="nav-link" href="/visita">
+                      Agendá tu visita
+                    </a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="/nosotros">
+                      Nosotros
+                    </a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="/search">
+                      Buscá tu proxima propiedad
+                    </a>
+                  </li>
+                <li className="nav-item">
+                  <h3 className="nombre">{user?.name ? "Hola " + user?.name : null}</h3>
+                </li>
+                <li>
+                  <a className="nav-link " href="/logout">
+                    Logout
+                  </a>
+                </li>
+            </ul>
+                
+                : 
+
+                ""
+                
+            }
+
+                         
+            { user.role === "admin"?
+              <ul className="navbar-nav mr-auto">
+                <li className="nav-item">
+                  <h3 className="nombre">{user?.name ? "Hola " + user?.name : null}</h3>
+                </li>
+                
+                <li>
+                  <a className="nav-link" href="/admin">
+                    Administrar página
+                  </a>
+                </li>
+                
+                <li>
+                  <a className="nav-link " href="/logout">
+                    Logout
+                  </a>
+                </li>
+            </ul>
+                : 
+
+              ""                
+            }     
+             </ul>
+               
+            
           </div>
         </div>
       </nav>
@@ -109,3 +134,4 @@ const MainNavbar = ({ user }) => {
 };
 
 export default MainNavbar;
+
